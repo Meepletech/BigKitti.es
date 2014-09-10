@@ -53,8 +53,11 @@
 	<div id="dummy"></div> 
    	<script type="text/javascript">
      	function meow() {
-  		document.getElementById("dummy").innerHTML= "<embed src=\"Meow.ogg\" hidden=\"true\" autostart=\"true\"	loop=\"false\" />";
-	}
+			document.getElementById("dummy").innerHTML= "<embed src=\"Meow.ogg\" hidden=\"true\" autostart=\"true\"	loop=\"false\" />";
+		}
+		
+		var el = document.getElementsByTagName("canvas");
+		el.addEventListener("touchstart", meow, false);
    	</script>
    </body>
 </html>
